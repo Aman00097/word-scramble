@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: linear-gradient(75deg, #5372F0, #6C757D);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main .container {
+    width: 440px;
+    border-radius: .7rem;
+    background: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+    margin: 1rem;
+}
+
+main .container h1 {
+    font-size: 3rem;
+    padding: 1.6rem 2.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+main .container .content {
+    margin: 2rem;
+}
+
+main .container .content .word {
+    user-select: none;
+    font-size: 4.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    word-break: break-all;
+    pointer-events: none;
+}
+
+main .container .content .details {
+    margin: 2.5rem 0 2rem;
+}
+
+.details p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.details p b {
+    font-weight: 500;
+}
+
+main .container .content input {
+    padding: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: 1px solid #bfbfbf;
+    outline: none;
+}
+
+.content input:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.content input::placeholder {
+    color: #aaa;
+}
+
+.content input:focus::placeholder {
+    color: #bfbfbf;
+}
+
+main .container .content .buttons {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .container .content .buttons button {
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: .5rem;
+    width: calc(100% / 2 - 8px);
+    transition: all .3s ease;
+}
+
+.buttons button:active {
+    transform: scale(0.97);
+}
+
+.buttons .refresh-word {
+    background: #6C757D;
+}
+
+.buttons .refresh-word:hover {
+    background: #5f666d;
+}
+
+.buttons .check-word {
+    background: #5372F0;
+}
+
+.buttons .check-word:hover {
+    background: #2c52ed;
+}
+
+@media screen and (max-width:450px) {
+    html {
+        font-size: 9px;
+    }
+
+    main .container h1 {
+        font-size: 2.4rem;
+    }
+
+    main .container .content .word {
+        font-size: 2.8rem;
+    }
+}
